@@ -26,7 +26,9 @@ var clozeArr = [
 
     new ClozeCard("The movie E.T was released on June 11, 1982", "June 11, 1982"),
 
-    new ClozeCard("The Apple iPhone was first released on June 29, 2007", "June 29, 2007")
+    new ClozeCard("The Apple iPhone was first released on June 29, 2007", "June 29, 2007"),
+
+    new ClozeCard("I like pizza", "tacos")
 ]
 
 function Arr1() {
@@ -63,7 +65,8 @@ function Arr2() {
             message: clozeArr[i].partial,
         },
     ]).then(data => {
-        if (data.name === clozeArr[i].cloze) {
+        console.log(clozeArr[0].text)
+        if (clozeArr[i].fullText.includes(data.name)) {
             console.log("Correct!");
         }
         else {
