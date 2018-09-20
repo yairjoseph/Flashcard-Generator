@@ -9,7 +9,7 @@ var basicArr = [
 
     new BasicCard("In Minnesota it is illegal to tease what type of animal?", "Skunk"),
 
-    new BasicCard("How old was jeff bezos when he started amazon?", "30"),
+    new BasicCard("How old was Jeff Bezos when he started amazon?", "30"),
 
     new BasicCard("Who was Visual Studio Code(VS Code) developed by?", "Microsoft"),
 
